@@ -1,0 +1,15 @@
+var newLink = document.createElement('a');
+var newTitle = document.createElement('h1');
+newTitle.id = "title_dynamic";
+newLink.id = 'sdz_link';
+newLink.href = 'http://www.siteduzero.com';
+newLink.title = 'Découvrez le Site du Zéro !';
+//newLink.setAttribute('tabindex', '10');
+document.getElementById("myP").appendChild(newTitle);
+document.getElementById('myP').appendChild(newLink);
+var newTitleText = document.createTextNode("Mon titre de paragraphe !");
+var newLinkText = document.createTextNode("Le Site du Zéro");
+var newTextSupp = document.createTextNode("Du texte suppémentaire !");
+newTitle.appendChild(newTitleText);
+newTitle.appendChild(newTextSupp);
+newLink.appendChild(newLinkText);
