@@ -1,0 +1,27 @@
+<span id="clickme">Cliquez-moi !</span>
+<input type="text" id="formulaire"></input>
+<button id="myButton">Cliquer ici !</button>
+
+<script>
+    //DOM
+    var element = document.getElementById('clickme');
+
+    var elementButton = document.getElementById("myButton");
+    element.onclick = function() {
+        alert("Vous m'avez cliqué !");
+    };
+    elementButton.onclick = function(){
+        var elementForm = document.getElementById("formulaire");
+        var formContent = elementForm.textContent;
+        alert("Vous avez saisie "+formContent);
+    };
+</script>
+
+<script>
+    // DOM 2
+    var element = document.getElementById('clickme');
+
+    element.addEventListener('click', function() {
+        alert("Vous m'avez cliqué !");
+    });
+</script>
